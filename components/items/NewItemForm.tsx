@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IconPicker } from "react-fa-icon-picker";
+// import { IconPicker } from "react-fa-icon-picker";
 import styles from "./items.module.css";
 import button_styles from "../../styles/buttons.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -86,12 +86,12 @@ const NewItemForm = (props: { deleteFunction: Function }) => {
         </div>
         <div className={styles.form_entry}>
           <div>תמונה:</div>
-          <IconPicker
+          {/* <IconPicker
             value={icon}
             onChange={(v: any) => {
               setIcon(v);
             }}
-          />
+          /> */}
         </div>
         {name !== "" && valueEvening !== 0 && valueMorning !== 0 && (
           <div
